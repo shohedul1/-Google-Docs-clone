@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Editor from "./editor";
+import Toolbar from "./toolbar";
 
 interface DocumentIdPageProps {
     params: Promise<{ documentId: string }>; // `params` is now a Promise
@@ -39,6 +40,7 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
 
     return (
         <div className="min-h-screen bg-[#FAFBFD]">
+            <Toolbar />
             <Editor />
         </div>
     );

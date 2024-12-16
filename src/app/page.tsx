@@ -7,8 +7,10 @@ const Home = () => {
     <div className='flex items-center justify-center min-h-screen'>
       <Button>hello</Button>
       Click<Link href={"/documents/456"}>here</Link>
+
     </div>
   )
 }
 
 export default Home
+
